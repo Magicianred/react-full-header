@@ -18,9 +18,15 @@ const propTypes = {
     video: PropTypes.string,
 };
 
-const FullHeader = ({ title, subtitle }) => {
+const FullHeader = ({ title, subtitle, bgColor, textColor, font }) => {
+    const headerStyles = {
+        backgroundColor: bgColor,
+        color: textColor,
+        fontFamily: font,
+    };
+
     const component = (
-        <header>
+        <header style={headerStyles}>
             {title && <h1>{title}</h1>}
             {subtitle && <h2>{subtitle}</h2>}
         </header>
