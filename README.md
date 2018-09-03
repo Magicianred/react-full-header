@@ -1,6 +1,6 @@
 # React Full Header Component
 
-[![Build Status](https://travis-ci.org/gabriel-hahn/react-full-header.svg?branch=master)](https://travis-ci.org/gabriel-hahn/react-full-header)
+[![Build Status](https://travis-ci.org/gabriel-hahn/react-full-header.svg?branch=master)](https://travis-ci.org/gabriel-hahn/react-full-header) [![Coverage Status](https://coveralls.io/repos/github/gabriel-hahn/react-full-header/badge.svg?branch=master)](https://coveralls.io/github/gabriel-hahn/react-full-header?branch=master)
 
 ![A gif with header containing video](https://media.giphy.com/media/l0MYPKsMPCK0YNFvy/giphy.gif)
 
