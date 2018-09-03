@@ -76,7 +76,7 @@ describe('<FullHeader />', () => {
             expect(wrapper).to.have.style('font-family').equal('sans-serif');
         });
 
-        it('Should have font equal open-sans when open-sans is passed', () => {
+        it('Should have font equal open-sans when is passed', () => {
             const wrapper = shallow(<FullHeader title="TDD" font="open-sans" />);
             expect(wrapper).to.have.style('font-family').equal('open-sans');
         });
