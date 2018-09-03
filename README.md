@@ -1,5 +1,7 @@
 # React Full Header Component
 
+[![Build Status](https://travis-ci.org/gabriel-hahn/react-full-header.svg?branch=master)](https://travis-ci.org/gabriel-hahn/react-full-header)
+
 ![A gif with header containing video](https://media.giphy.com/media/l0MYPKsMPCK0YNFvy/giphy.gif)
 
 ## Installation
