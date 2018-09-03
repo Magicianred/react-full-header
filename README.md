@@ -17,7 +17,7 @@ import FullHeader from 'react-full-header-generic';
 render() {
     return (
         <FullHeader
-            title="lyef"
+            title="Full Header"
             subtitle="What is tested may never break."
             bgColor="#EBE9EB"
             textColor="#3299BB"
