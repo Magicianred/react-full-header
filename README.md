@@ -1,15 +1,21 @@
 # React Full Header Component
 
+![A gif with header containing video](https://media.giphy.com/media/l0MYPKsMPCK0YNFvy/giphy.gif)
+
+## Demo
+
+[Live examples](https://gabriel-hahn.github.io/react-full-header)
+
 ## Installation
 
 ```sh
-$ npm install --save react-full-header
+$ npm install --save react-full-header-generic
 ```
 
 ## Basic Usage
 
 ```jsx
-import FullHeader from 'react-full-header';
+import FullHeader from 'react-full-header-generic';
 
 ...
 render() {
@@ -44,6 +50,11 @@ We've developed this component using the following boilerplate:
 
 If you want to contribute with this component:
 [Contributing Documentation](https://github.com/gabriel-hahn/react-full-header/blob/master/CONTRIBUTING.md).
+
+## Authors
+
+[Gabriel Hahn Schaeffer](https://github.com/gabriel-hahn/) | 
+[Willian Justen](https://github.com/willianjusten/) (Teacher)
 
 ## License
 
