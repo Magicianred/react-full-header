@@ -32,10 +32,18 @@ storiesOf('<FullHeader />', module)
             textColor="#FF9900"
             font="cursive"
         />
+    ))
+    .add('with title, subtitle and bgImage', () => (
+        <FullHeader
+            title="TDD"
+            subtitle="What is tested may never break."
+            bgImage="https://i.imgur.com/YBFJOJd.png"
+        />
+    ))
+    .add('with title, subtitle and video', () => (
+        <FullHeader
+            title="TDD"
+            subtitle="What is tested may never break."
+            video="http://callmenick.com/_development/video/full-screen-background-video/media/demo.mp4"
+        />
     ));
-    /* .add('with title, subtitle and bgImage', () => {
-        <FullHeader title="TDD" subtitle="What is tested may never break." bgImg="" />
-    })
-    .add('with title, subtitle and video', () => {
-        <FullHeader title="TDD" subtitle="What is tested may never break." video="" />
-    }); */

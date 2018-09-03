@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { headerStyle, containerStyle, titleStyle, subtitleStyle, videoStyle } from './Styles';
 
 const defaultProps = {
     bgColor: '#ccc',
     textColor: '#fff',
     font: 'sans-serif',
-    bgImg: '',
+    bgImage: '',
 };
 
 const propTypes = {
@@ -18,17 +19,22 @@ const propTypes = {
     video: PropTypes.string,
 };
 
-const FullHeader = ({ title, subtitle, bgColor, textColor, font }) => {
-    const headerStyles = {
+const FullHeader = ({ title, subtitle, bgColor, textColor, font, bgImage, video }) => {
+    const headerStyleCombyne = {
+        ...headerStyle,
         backgroundColor: bgColor,
+        backgroundImage: `url(${bgImage})`,
         color: textColor,
         fontFamily: font,
     };
 
     const component = (
-        <header style={headerStyles}>
-            {title && <h1>{title}</h1>}
-            {subtitle && <h2>{subtitle}</h2>}
+        <header style={headerStyleCombyne}>
+            <div style={containerStyle}>
+                {title && <h1 style={titleStyle}>{title}</h1>}
+                {subtitle && <h2 style={subtitleStyle}>{subtitle}</h2>}
+            </div>
+            {video && <video style={videoStyle} autoPlay muted loop src={video} />}
         </header>
     );
 

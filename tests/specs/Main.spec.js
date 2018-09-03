@@ -81,4 +81,33 @@ describe('<FullHeader />', () => {
             expect(wrapper).to.have.style('font-family').equal('open-sans');
         });
     });
+
+    context('bgImage', () => {
+        it('Should have background-image equal empty when none is passed', () => {
+            const wrapper = shallow(<FullHeader />);
+            expect(wrapper).to.have.style('background-image').equal('url()');
+        });
+
+        it('Should have background-image equal bg.jpg when passed', () => {
+            const wrapper = shallow(<FullHeader bgImage="bg.jpg" />);
+            expect(wrapper).to.have.style('background-image').equal('url(bg.jpg)');
+        });
+    });
+
+    context('video', () => {
+        it('Should have video tag when video passed', () => {
+            const wrapper = shallow(<FullHeader video="my_video.mp4" />);
+            expect(wrapper.find('video')).to.have.length(1);
+        });
+
+        it('Should not have video tag when video is not passed', () => {
+            const wrapper = shallow(<FullHeader />);
+            expect(wrapper.find('video')).to.have.length(0);
+        });
+
+        it('Should have video tag with the video passed', () => {
+            const wrapper = shallow(<FullHeader video="my_video.mp4" />);
+            expect(wrapper.find('video').props().src).to.be.equal('my_video.mp4');
+        });
+    });
 });
