@@ -2,10 +2,6 @@
 
 ![A gif with header containing video](https://media.giphy.com/media/l0MYPKsMPCK0YNFvy/giphy.gif)
 
-## Demo
-
-[Live examples](https://gabriel-hahn.github.io/react-full-header)
-
 ## Installation
 
 ```sh
